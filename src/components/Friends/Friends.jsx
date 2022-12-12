@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import css from './Friends.module.css';
 export const FriendsList = ({ friends }) => (
     <section className={css.friends}>
@@ -12,3 +13,13 @@ export const FriendsList = ({ friends }) => (
     </ul>
   </section>
 );
+
+FriendsList.propTypes = {
+  friends: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number,
+    isOnline: PropTypes.bool,
+    avatar: PropTypes.string,
+    name: PropTypes.string,
+  })),
+  
+};

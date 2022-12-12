@@ -2,11 +2,11 @@ import user from '../data/user';
 import data from '../data/data.json';
 import friends from '../data/friends'
 import history from '../data/transactions';
-import { User } from "./Profile";
-import { Statistics } from "./Statistics";
-import { FriendsList } from './Friends';
-import { TransactionHistory } from './TransactionHistory';
-console.log(history);
+import { User } from "./Profile/Profile";
+import { Statistics } from "./Statistics/Statistics";
+import { FriendsList } from './Friends/Friends';
+import { TransactionHistory } from './TransactionHistory/TransactionHistory';
+
 export const App = () => {
   return (
     <div
